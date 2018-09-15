@@ -1,1 +1,5 @@
-composer.lock
+/vendor
+/composer.lock
+/cache
+/examples/simple/vendor
+/examples/simple/cache

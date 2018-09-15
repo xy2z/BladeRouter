@@ -1,0 +1,5 @@
+{
+    "require": {
+        "xy2z/blade-router": "dev-master"
+    }
+}
