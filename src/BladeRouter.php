@@ -125,7 +125,7 @@
 			switch ($routeInfo[0]) {
 				case \FastRoute\Dispatcher::NOT_FOUND:
 					header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
-					echo $this->blade->run($this->not_found_file, $this->global_template_vars);
+					echo $this->blade->run($this->not_found_view, $this->global_template_vars);
 					break;
 
 				case \FastRoute\Dispatcher::FOUND:
