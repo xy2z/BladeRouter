@@ -1,5 +1,5 @@
 {
     "require": {
-        "xy2z/blader": "dev-master"
+        "xy2z/blader": "^1.0"
     }
 }
