@@ -1,8 +1,9 @@
 {
     "name": "xy2z/blader",
-    "description": "A microframework for static websites",
+    "description": "A lightweight microframework for static websites",
     "keywords": ["blade", "bladeone", "fast-route", "static"],
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "xy2z",
