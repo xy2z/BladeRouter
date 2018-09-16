@@ -3,20 +3,17 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>BladeRouter Example</title>
+		<title>@yield('title') | Blader Example</title>
 		<style>
 			* {
 				text-align: center;
 			}
-
 			nav {
 				padding: 20px;
 			}
-
 			nav a {
 				color: #09f;
 			}
-
 			main {
 				padding: 20px;
 				border-top: 1px solid #eee;
@@ -25,7 +22,7 @@
 	</head>
 
 	<body>
-		<h1>BladeRouter Example</h1>
+		<h1>Blader Example</h1>
 
 		<nav>
 			<a href="/">Home</a> |

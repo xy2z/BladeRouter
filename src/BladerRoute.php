@@ -1,8 +1,8 @@
 <?php
 
-	namespace xy2z\BladeRouter;
+	namespace xy2z\Blader;
 
-	class BladeRouterRoute {
+	class BladerRoute {
 
 		/**
 		 * Method: GET, POST, etc.

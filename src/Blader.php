@@ -1,10 +1,10 @@
 <?php
 
-	namespace xy2z\BladeRouter;
+	namespace xy2z\Blader;
 
 	use eftec\bladeone\BladeOne;
 
-	class BladeRouter {
+	class Blader {
 
 		/**
 		 * Filename of the view to show on 404.
@@ -18,7 +18,7 @@
 		 *
 		 * @var array
 		 */
-		public $global_template_vars = [];
+		public $global_vars = [];
 
 		/**
 		 * Views directory
@@ -42,7 +42,7 @@
 		public $blade_mode = BladeOne::MODE_AUTO;
 
 		/**
-		 * Array of BladeRouterRoute
+		 * Array of BladerRoute
 		 *
 		 * @var array
 		 */
@@ -77,11 +77,8 @@
 			// Routing
 			$this->setRouter();
 
-			// Get URI
-			$uri = static::getUri();
-
 			// Render view
-			$this->renderView($uri);
+			$this->renderView();
 		}
 
 		/**
@@ -92,7 +89,7 @@
 		 * @param string $view Filename in views dir.
 		 */
 		public function addRoute(string $method, string $routePattern, string $view) {
-			$route = new BladeRouterRoute;
+			$route = new BladerRoute;
 			$route->method = $method;
 			$route->routePattern = $routePattern;
 			$route->view = $view;
@@ -119,18 +116,18 @@
 			return rawurldecode($uri);
 		}
 
-		private function renderView(string $uri) {
-			$routeInfo = $this->dispatcher->dispatch($_SERVER['REQUEST_METHOD'], $uri);
+		private function renderView() {
+			$routeInfo = $this->dispatcher->dispatch($_SERVER['REQUEST_METHOD'], static::getUri());
 
 			switch ($routeInfo[0]) {
 				case \FastRoute\Dispatcher::NOT_FOUND:
 					header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
-					echo $this->blade->run($this->not_found_view, $this->global_template_vars);
+					echo $this->blade->run($this->not_found_view, $this->global_vars);
 					break;
 
 				case \FastRoute\Dispatcher::FOUND:
 					$template = $routeInfo[1];
-					$vars = array_merge($this->global_template_vars, $routeInfo[2]);
+					$vars = array_merge($this->global_vars, $routeInfo[2]);
 
 					echo $this->blade->run($template, $vars);
 					break;

@@ -1,6 +1,6 @@
 {
-    "name": "xy2z/blade-router",
-    "description": "Fast router for serving blade views",
+    "name": "xy2z/blader",
+    "description": "A microframework for static websites",
     "keywords": ["blade", "bladeone", "fast-route", "static"],
     "type": "library",
     "authors": [
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "xy2z\\BladeRouter\\": "src/"
+            "xy2z\\Blader\\": "src/"
         }
     }
 }
