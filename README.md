@@ -2,7 +2,7 @@
 
 A lightweight microframework for static websites.
 
-Using Laravel's blade syntax ([BladeOne](https://github.com/EFTEC/BladeOne/))
+Using [BladeOne](https://github.com/EFTEC/BladeOne/) - a standalone version of Laravel's blade template engine.
 
 ## Install
 ```
