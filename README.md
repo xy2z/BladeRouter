@@ -6,39 +6,16 @@ Using Laravel's blade syntax ([BladeOne](https://github.com/EFTEC/BladeOne/))
 
 ## Install
 ```
-composer require xy2z/blader
+composer create-project xy2z/blader mysite
+cd mysite/public
+php -S 127.0.0.1:81
 ```
+
+Go to http://127.0.0.1:81
+
+### Requirements
 
 Requires PHP 7.0 or above.
-
-## Usage
-
-**index.php**
-
-```php
-require_once '../vendor/autoload.php';
-
-use xy2z\Blader\Blader;
-
-$blader = new Blader;
-$blader->views_dir = __DIR__ . '/../views';
-$blader->cache_dir = __DIR__ . '/../cache';
-
-// Add routes
-$blader->addRoute('GET', '/', 'home'); // Renders ../views/home.blade.php
-$blader->addRoute('GET', '/about', 'about'); // Renders ../views/about.blade.php
-$blader->not_found_view = '404'; // Renders ../views/404.blade.php on 404.
-
-// Variables available in all views.
-$blader->global_vars = [
-	'version' => '1.3.0'
-];
-
-// Render view.
-$blader->render();
-```
-
-See more in the [examples](https://github.com/xy2z/Blader/tree/master/examples) dir.
 
 
 ## Credits

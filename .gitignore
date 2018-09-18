@@ -1,6 +1,6 @@
 /vendor
 /composer.lock
-/cache
 /.examples/simple/vendor
 /.examples/simple/cache
 /.examples/simple/composer.lock
+/resources/cache/*.bladec

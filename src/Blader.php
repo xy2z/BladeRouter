@@ -25,14 +25,14 @@
 		 *
 		 * @var string
 		 */
-		public $views_dir;
+		public $views_dir = ROOT_DIR . '/resources/views';
 
 		/**
 		 * Views cache directory
 		 *
 		 * @var string
 		 */
-		public $cache_dir;
+		public $cache_dir = ROOT_DIR . '/resources/cache';
 
 		/**
 		 * BladeOne mode (see BladeOne docs)
