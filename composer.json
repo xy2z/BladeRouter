@@ -1,7 +1,7 @@
 {
     "name": "xy2z/blader",
     "description": "A lightweight microframework for static websites",
-    "keywords": ["blade", "bladeone", "fast-route", "static"],
+    "keywords": ["blader", "bladeone", "microframework", "fast-route", "static"],
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -11,7 +11,6 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
-        "xy2z/blader-core": "^1.0"
+        "xy2z/blader-core": "^1.1"
     }
 }

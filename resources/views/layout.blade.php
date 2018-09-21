@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Blader</title>
+		<title>{{ Config::get('app.name') }}</title>
 		<style>
 			body {
 				margin-top: 100px;
