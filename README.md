@@ -15,7 +15,21 @@ Go to http://127.0.0.1:81
 
 ### Requirements
 
-Requires PHP 7.0 or above.
+- PHP 7.0 or above.
+
+
+## Usage
+```php
+require '../vendor/xy2z/blader-core/src/init.php';
+
+$blader->addRoute('GET', '/', 'home'); // Renders '../views/home.blade.php'
+$blader->addRoute('GET', '/about', 'about'); // Renders '../views/about.blade.php'
+$blader->not_found_view = '404'; // Renders '../views/404.blade.php' on 404.
+
+$blader->render();
+```
+
+That's it.
 
 
 ## Credits
