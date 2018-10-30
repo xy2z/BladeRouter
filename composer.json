@@ -1,7 +1,7 @@
 {
     "name": "xy2z/blader",
-    "description": "A lightweight microframework for static websites",
-    "keywords": ["blader", "bladeone", "microframework", "fast-route", "static"],
+    "description": "A lightweight template router",
+    "keywords": ["blader", "bladeone", "microframework", "fast-route", "static", "template", "router"],
     "type": "project",
     "license": "MIT",
     "authors": [
