@@ -1,6 +1,6 @@
 # Blader
 
-A lightweight template router - for websites with minimal dynamic needs.
+A lightweight template router - for websites with no/minimal dynamic needs.
 
 Using [BladeOne](https://github.com/EFTEC/BladeOne/) - a standalone version of Laravel's blade template engine.
 
